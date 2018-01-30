@@ -1,1 +1,1 @@
-web: sh src/main/webapp/WEB-INF/templates
+web: sh target/pokheir-1.0-SNAPSHOT/WEB-INF/templates
