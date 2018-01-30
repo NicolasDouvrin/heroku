@@ -1,0 +1,96 @@
+
+/*** Enregistrement  ***/
+
+html.registration {
+  background-color: black;
+  background-image: url(../img/login.jpg);
+}
+
+.registration-box {
+  background-color: #f7f7f7;
+  display: inline-block;
+  min-width: 350px;
+  margin: 100px auto;
+}
+
+.registration-box-container {
+  text-align: center; }
+
+.registration-box-heading {
+  font-size: 15px;
+  background-color: #ededed;
+  padding: 30px 10px 30px 10px;
+  position: relative; }
+
+
+.registration-box-content {
+  background-color: #ededed;
+  padding: 0px 60px 40px 40px; }
+
+.registration-box-content .login {
+  min-width: 290px; }
+
+.registration-box-content .login input[type=text] {
+  width: 100%; }
+
+.registration-box-content .login input[type=password] {
+  width: 100%; }
+
+.registration-box-content .login input[type=email] {
+  width: 100%; }
+
+.registration-box-content .login input[type=checkbox] {
+  margin-right: 6px; }
+
+.registration-box-content .pad-block {
+  margin-top: 20px; }
+
+.registration-box-content .login .input-label {
+  text-align: left;
+  margin-bottom: 10px; }
+
+.registration-box-content .login .input-label-note {
+  font-size: 0.75em; }
+
+
+/*** Login ***/
+
+.login-register-text {
+  font-size: 14px; }
+
+.login-register-text div {
+  margin-bottom: 10px; }
+
+.login-register-text div.last-child {
+  margin-bottom: 0px; }
+
+.login-remember-me {
+  font-size: 12px;
+  margin-bottom: 3px; }
+
+.login-error {
+  color: red; }
+
+input[type=text] {
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 4px;
+  /* Ombre sur le contour interieur de la zone de saisie pour plus de profondeur */
+  -moz-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.21), inset 0px 0px 0px 1px #ececec;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.21), inset 0px 0px 0px 1px #ececec;
+  background: #FFFFFF; }
+
+input[type=password] {
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 4px;
+  /* Ombre sur le contour interieur de la zone de saisie pour plus de profondeur */
+  -moz-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.21), inset 0px 0px 0px 1px #ececec;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.21), inset 0px 0px 0px 1px #ececec;
+  background: #FFFFFF; }
+
+input[type=password]:focus {
+  border-color: #333; }
+
+
+

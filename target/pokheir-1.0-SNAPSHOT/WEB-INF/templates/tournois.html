@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<title>Tournois</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../compiled/flipclock.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="../compiled/flipclock.js"></script>
+
+<div th:replace="~{fragment::style2}"></div>
+
+<body>
+
+<div th:replace="~{fragment::navbar2}"></div>
+
+<div class="w3-container w3-white w3-center" id="class">
+<h1> PAGE EN COURS DE CONSTRUCTION </h1>
+    <p> Temps restant :</p>
+</br>
+    <div class="clock w3-left w3-container" style="margin-right: 30%;"></div>
+
+    <script type="text/javascript">
+        var clock;
+
+        $(document).ready(function() {
+            var clock;
+
+
+            $(document).ready(function() {
+
+                // Grab the current date
+                var currentDate = new Date();
+
+                // Set some date in the past. In this case, it's always been since Jan 1
+                var futureDate  = new Date("April 17,2018 00:00");
+
+                // Calculate the difference in seconds between the future and current date
+                var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+                // Instantiate a coutdown FlipClock
+                clock = $('.clock').FlipClock(diff, {
+                    clockFace: 'DailyCounter',
+                    countdown:true
+                });
+            });
+        });
+    </script>
+
+
+</div>
+
+
+
+<div th:replace="~{fragment::script}"></div>
+
+</body>
+
+</html>

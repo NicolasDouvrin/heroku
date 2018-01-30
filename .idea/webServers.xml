@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e064a175-cfca-43f6-8117-504dcdf64c84" name="easyname" url="http://e89667-ftp.services.easyname.eu">
+        <fileTransfer host="e89667-ftp.services.easyname.eu" port="21" rootFolder="/html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
