@@ -18,4 +18,4 @@ CREATE TABLE membre (
 
 // Et enfin dans membre
 
-INSERT INTO membre VALUE ('admin@hei.yncrea.fr','admin','admin','H00','hei2018',0,0,0)
+INSERT INTO membre VALUES ('admin@hei.yncrea.fr','admin','admin','H00','hei2018',0,0,0)
