@@ -111,6 +111,42 @@
     </style>
 </div>
 
+<div th:fragment="style4">
+    <style>
+
+        body,h1,h2,h3,h4,h5,h6 {
+            font-family: "Lato", sans-serif;
+        }
+        body, html {
+            height: 100%;
+            line-height: 1.8;
+            background-image: url("img/code.jpg");
+            min-height: 100%;
+        }
+
+        .w3-wide {letter-spacing: 10px;}
+        .w3-hover-opacity {cursor: pointer;}
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+        #class{
+            margin-top: 100px;
+            padding: 60px 200px 60px 200px;
+            width: 100%;
+        }
+
+        #regle{
+            margin-top: 100px;
+            padding: 100px;
+            margin-bottom: 100px;
+        }
+    </style>
+</div>
+
 <div th:fragment="navbar">
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -124,8 +160,8 @@
             <a href="classement" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"></i> CLASSEMENT</a>
             <a href="tournois" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star"></i> TOURNOIS</a>
             <a href="accueil#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="login" class="w3-bar-item w3-button w3-right w3-hide-small">CONNEXION</a>
             <a href="register" class="w3-bar-item w3-button w3-right w3-hide-small">S'ENREGISTRER</a>
+            <a href="login" class="w3-bar-item w3-button w3-right w3-hide-small">CONNEXION</a>
         </div>
 
         <!-- Navbar on small screens -->
@@ -155,8 +191,8 @@
             <a href="classement" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"></i> CLASSEMENT</a>
             <a href="tournois" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star"></i> TOURNOIS</a>
             <a href="accueil#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="compte" class="w3-bar-item w3-button w3-right w3-hide-small">MON COMPTE</a>
             <a href="deconnexion" class="w3-bar-item w3-button w3-right w3-hide-small">DECONNEXION</a>
+            <a href="compte" class="w3-bar-item w3-button w3-right w3-hide-small">MON COMPTE</a>
         </div>
 
         <!-- Navbar on small screens -->
