@@ -74,10 +74,10 @@ public class MembreDaoImpl implements MembreDao {
         String query = "SELECT mdp FROM membre WHERE email=?";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
-                statement.setString(1, email);
-                try (ResultSet resultSet = statement.executeQuery()) {
-                    if (resultSet.next()) {
-                        return new String(resultSet.getString("mdp"));
+            statement.setString(1, email);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    return new String(resultSet.getString("mdp"));
                 }
             }
         } catch (SQLException e) {

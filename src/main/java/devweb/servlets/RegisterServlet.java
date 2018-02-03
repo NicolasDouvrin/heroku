@@ -72,23 +72,23 @@ public class RegisterServlet extends GenericServlet {
         out.println("<div class=\"pad-block\">");
         out.println("<div class=\"input-label\"><label for=\"id_username\">Email:</label></div></br>");
         out.println("<div><input required id=\"id_email\" maxlength=\"30\" name=\"email\" type=\"text\" " +
-                "pattern=\"[A-Za-z0-9._%+-]{3,}@hei.yncrea.fr\" /></div></br>");
+                "pattern=\"[A-Za-z0-9._%+-]{3,}@hei.yncrea.fr\" style=\"padding-left:50px;padding-right:50px;\"/></div></br>");
         out.println("</div>");
         out.println("<div class=\"pad-block\">");
         out.println("<div class=\"input-label\"><label for=\"id_username\">Nom:</label></div></br>");
-        out.println("<div><input required id=\"id_username\" maxlength=\"30\" name=\"name\" type=\"text\" /></div>");
+        out.println("<div><input required id=\"id_username\" maxlength=\"30\" name=\"name\" type=\"text\" style=\"padding-left:50px;padding-right:50px;\"/></div>");
         out.println("</div></br>");
         out.println("<div class=\"pad-block\">");
         out.println("<div class=\"input-label\"><label for=\"id_prenom\">Prénom:</label></div></br>");
-        out.println("<div><input required id=\"id_username\" maxlength=\"75\" name=\"prenom\" type=\"text\" /></div></br>");
+        out.println("<div><input required id=\"id_username\" maxlength=\"75\" name=\"prenom\" type=\"text\" style=\"padding-left:50px;padding-right:50px;\"/></div></br>");
         out.println("</div>");
         out.println("<div class=\"pad-block\">");
         out.println("<div class=\"input-label\"><label for=\"id_classe\">Classe (ex:H44):</label></div></br>");
-        out.println("<div><input required id=\"id_classe\" maxlength=\"75\" name=\"classe\" type=\"text\" /></div></br>");
+        out.println("<div><input required id=\"id_classe\" maxlength=\"75\" name=\"classe\" type=\"text\" style=\"padding-left:50px;padding-right:50px;\"/></div></br>");
         out.println("</div>");
         out.println("<div class=\"pad-block\">");
         out.println("<div class=\"input-label\"><label for=\"id_password1\">Mot de Passe:</label></div></br>");
-        out.println("<div><input required id=\"id_password\" name=\"password\" type=\"password\" /></div></br>");
+        out.println("<div><input required id=\"id_password\" name=\"password\" type=\"password\" style=\"padding-left:50px;padding-right:50px;\"/></div></br>");
         out.println("</div>");
         out.println("<div class=\"pad-block\"><input class=\"w3-btn w3-amber w3-round-xxlarge\" type=\"submit\" value=\"VALIDER\" /></div>");
         out.println("</form>");
