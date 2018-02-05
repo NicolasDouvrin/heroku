@@ -35,6 +35,39 @@ public class RegisterServlet extends GenericServlet {
         out.println("<link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>");
         out.println("</head>");
         out.println("<!-- Formulaire d'enregistrement de l'utilisateur -->");
+
+            out.println("         <style>");
+            out.println("");
+            out.println("                body,h1,h2,h3,h4,h5,h6 {");
+            out.println("            font-family: \"Lato\", sans-serif;");
+            out.println("        }");
+            out.println("        body, html {");
+            out.println("            height: 100%;");
+            out.println("            line-height: 1.8;");
+            out.println("        }");
+            out.println("");
+            out.println("        /* Create a Parallax Effect */");
+            out.println("    .bgimg-1, .bgimg-2, .bgimg-3 {");
+            out.println("            background-attachment: fixed;");
+            out.println("            background-position: center;");
+            out.println("            background-repeat: no-repeat;");
+            out.println("            background-size: cover;");
+            out.println("        }");
+            out.println("    .w3-wide {");
+            out.println("            letter-spacing: 10px;");
+            out.println("        }");
+            out.println("    .w3-hover-opacity {");
+            out.println("            cursor: pointer;");
+            out.println("        }");
+            out.println("");
+            out.println("        /* Turn off parallax scrolling for tablets and phones */");
+            out.println("        @media only screen and (max-device-width: 1024px) {");
+            out.println("        .bgimg-1, .bgimg-2, .bgimg-3 {");
+            out.println("                background-attachment: scroll;");
+            out.println("            }");
+            out.println("        }");
+            out.println("</style>");
+
         out.println("<body>");
 
         out.println("        <div class=\"w3-top\">");

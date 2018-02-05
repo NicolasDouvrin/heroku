@@ -7,36 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1faf17b3-531b-45b3-a62c-f524e2803b24" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/IDEA_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/IDEA_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_9_4_1208.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/IDEA.iml" afterPath="$PROJECT_DIR$/IDEA.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/dao/MembreDao.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/dao/MembreDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/dao/impl/MainConfig.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilServlet.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilServlet.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Articles.sql" afterPath="$PROJECT_DIR$/src/main/resources/Articles.sql" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Articles.sql" afterPath="$PROJECT_DIR$/target/classes/Articles.sql" />
-      <change beforePath="$PROJECT_DIR$/target/classes/devweb/dao/impl/MainConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/devweb/servlets/AccueilServlet.class" afterPath="$PROJECT_DIR$/target/classes/devweb/servlets/AccueilServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/devweb/servlets/LoginServlet.class" afterPath="$PROJECT_DIR$/target/classes/devweb/servlets/LoginServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/devweb/servlets/RegisterServlet.class" afterPath="$PROJECT_DIR$/target/classes/devweb/servlets/RegisterServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/Articles.sql" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/Articles.sql" />
-      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/AccueilServlet.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/AccueilServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/LoginServlet.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/LoginServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/RegisterServlet.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/RegisterServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/accueilAdmin.html" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/accueilAdmin.html" />
-      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/index.html" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/impl/MembreDaoTestCase.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,7 +25,7 @@
       <file leaf-file-name="AddArticleServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/AddArticleServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="462">
               <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -64,7 +37,7 @@
       <file leaf-file-name="DeleteArticleServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/DeleteArticleServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="440">
               <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,7 +61,7 @@
       <file leaf-file-name="accueilAdmin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
+            <state relative-caret-position="858">
               <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -99,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -112,18 +85,18 @@
       <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1430">
-              <caret line="72" column="114" lean-forward="false" selection-start-line="72" selection-start-column="114" selection-end-line="72" selection-end-column="114" />
+            <state relative-caret-position="778">
+              <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegisterServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1210">
-              <caret line="66" column="152" lean-forward="false" selection-start-line="66" selection-start-column="152" selection-end-line="66" selection-end-column="152" />
+            <state relative-caret-position="778">
+              <caret line="68" column="36" lean-forward="false" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -159,7 +132,7 @@
       <file leaf-file-name="ArticleDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/ArticleDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1166">
+            <state relative-caret-position="1298">
               <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,7 +144,7 @@
       <file leaf-file-name="ArticleService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/devweb/services/ArticleService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
+            <state relative-caret-position="946">
               <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -254,10 +227,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/DeleteArticleServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/dao/ArticleDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java" />
       </list>
     </option>
   </component>
@@ -280,6 +253,9 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <option name="groupStructurally" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -305,8 +281,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -335,7 +309,9 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -636,7 +612,8 @@
       <workItem from="1517751943423" duration="10086000" />
       <workItem from="1517763070106" duration="159000" />
       <workItem from="1517826670319" duration="1845000" />
-      <workItem from="1517828561927" duration="94000" />
+      <workItem from="1517828561927" duration="156000" />
+      <workItem from="1517830306189" duration="31000" />
     </task>
     <servers />
   </component>
@@ -673,7 +650,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81179000" />
+    <option name="totallyTimeSpent" value="81272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -688,7 +665,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25141564" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25141564" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -772,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="26" column="72" lean-forward="false" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,13 +822,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/impl/Bean.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml.tld" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/impl/MembreDaoTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/impl/MembreDaoTestCase.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/impl/MainConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -898,13 +868,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/impl/ArticleDaoTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/impl/ArticleDaoTestCase.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -923,15 +887,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/services/ArticleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
+        <state relative-caret-position="946">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -944,7 +905,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/ArticleDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
+        <state relative-caret-position="1298">
           <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -952,17 +913,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="72" column="114" lean-forward="false" selection-start-line="72" selection-start-column="114" selection-end-line="72" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/AddArticleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="462">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -970,17 +923,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="66" column="152" lean-forward="false" selection-start-line="66" selection-start-column="152" selection-end-line="66" selection-end-column="152" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/DeleteArticleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="440">
           <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1025,7 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
+        <state relative-caret-position="858">
           <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1039,6 +984,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="68" column="36" lean-forward="false" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
           <folding />
         </state>
       </provider>
