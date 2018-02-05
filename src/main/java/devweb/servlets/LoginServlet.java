@@ -41,7 +41,7 @@ public class LoginServlet extends GenericServlet {
             out.println("<title>POK'HEIR - Login</title>");
             out.println("</head>");
             out.println("<!-- Formulaire de connexion avec pseudo et mot de passe -->");
-
+            out.println("<body>");
             out.println("         <style>");
             out.println("");
             out.println("                body,h1,h2,h3,h4,h5,h6 {");
@@ -73,7 +73,6 @@ public class LoginServlet extends GenericServlet {
             out.println("            }");
             out.println("        }");
             out.println("</style>");
-            out.println("<body>");
 
             out.println("        <div class=\"w3-top\">");
             out.println("        <div class=\"w3-bar w3-show w3-card w3-animate-top w3-white\" id=\"myNavbar\">");

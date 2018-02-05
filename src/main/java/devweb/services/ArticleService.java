@@ -42,8 +42,9 @@ public class ArticleService {
         articleDao.addArticle(article);
     }
 
-    public void delArticle(String titre){
-        articleDao.delArticle(titre);
+    public void delArticle(Integer idArticle){
+
+        articleDao.delArticle(idArticle);
     }
 
 }

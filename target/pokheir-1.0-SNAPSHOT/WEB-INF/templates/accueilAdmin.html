@@ -13,7 +13,7 @@
 
 <div th:replace="~{fragment::navbar}"></div>
 
-<div class="w3-content w3-container w3-center w3-white" style="margin-top: 100px;padding-bottom:50px;margin-bottom: 100px;">
+<div class="w3-content w3-container w3-center w3-white" style="margin-top: 100px;padding-bottom:50px;margin-bottom: 200px;">
 
     <h1 style="padding-top: 50px"> ADMINISTRATION DES ARTICLES</h1>
     <form method="post" action="addarticle">
@@ -32,10 +32,10 @@
     <form method="post" action="delarticle">
     <h3> Suppression d'article </h3>
     <div id="selection" >
-        <select id="id_article" name="article" style="width:400px;" th:field="*{articles}"  > /**/
+        <select id="id_article" name="id_article" style="width:400px;" th:field="*{articles}"  > /**/
             <option value=""> -- </option>
-            <option th:each="article,row : ${articles}"
-                    th:value="${article.titre}"
+            <option th:each="article : ${articles}"
+                    th:value="${article.idArticle}"
                     name="titre"> Liste des Articles  </option>
         </select></br>
         </br>

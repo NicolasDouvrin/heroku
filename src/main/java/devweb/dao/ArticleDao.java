@@ -12,11 +12,11 @@ public class ArticleDao {
 
     public DataSource getDatasource() {
         MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setServerName("localhost");
+        dataSource.setServerName("nr84dudlpkazpylz.chr7pe7iynqr.eu-west-1.rds.amazonaws.com");
         dataSource.setPort(3306);
-        dataSource.setDatabaseName("base");
-        dataSource.setUser("root");
-        dataSource.setPassword("root");
+        dataSource.setDatabaseName("d2ecpo8shdq7pdmr");
+        dataSource.setUser("wzw4zb6dvsoypc74");
+        dataSource.setPassword("su9d7layctq9uwzf");
 
         return dataSource;
     }
@@ -52,11 +52,11 @@ public class ArticleDao {
         }
     }
 
-    public void delArticle(String titre) {
-        String query = "DELETE * FROM articles WHERE titre=? ";
+    public void delArticle(Integer idArticle) {
+        String query = "DELETE FROM articles WHERE idArticle=? ";
         try (Connection connection = getDatasource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
-            statement.setString(1, titre);
+            statement.setInt(1, idArticle);
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
