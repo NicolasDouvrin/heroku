@@ -2,6 +2,7 @@ F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\dao\ArticleDao.
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\dao\impl\MembreDaoImpl.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\servlets\DeleteArticleServlet.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\servlets\TournoiServlet.java
+F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\servlets\DeleteMembreServlet.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\servlets\ErrorServlet.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\servlets\LoginServlet.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\dao\impl\DataSourceProvider.java

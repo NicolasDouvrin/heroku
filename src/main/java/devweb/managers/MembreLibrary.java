@@ -37,8 +37,9 @@ public class MembreLibrary {
         return membreDao.getMdp(email);
     }
 
-    public Membre deleteMembre() {
-        return membreDao.deleteMembre();
+    public Membre deleteMembre(String email) {
+
+        return membreDao.deleteMembre(email);
     }
 
 

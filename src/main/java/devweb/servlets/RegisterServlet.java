@@ -103,12 +103,12 @@ public class RegisterServlet extends GenericServlet {
             out.println("                   <form method=\"post\">");
             out.println("<div class=\"pad-block\">");
             out.println("<div class=\"input-label\"><label for=\"id_email\">Email:</label></div></br>");
-            out.println("<div><input required id=\"id_username\" maxlength=\"30\" name=\"username\" type=\"text\" " +
+            out.println("<div><input required id=\"id_username\" maxlength=\"30\" name=\"email\" type=\"text\" " +
                     "pattern=\"[A-Za-z0-9._%+-]{3,}@hei.yncrea.fr\" style=\"padding-left:50px;padding-right:50px;\"/></div></br>");
             out.println("</div>");
             out.println("<div class=\"pad-block\">");
             out.println("<div class=\"input-label\"><label for=\"id_username\">Nom:</label></div></br>");
-            out.println("<div><input required id=\"id_username\" maxlength=\"30\" name=\"name\" type=\"text\" style=\"padding-left:50px;padding-right:50px;\"/></div>");
+            out.println("<div><input required id=\"id_username\" maxlength=\"30\" name=\"nom\" type=\"text\" style=\"padding-left:50px;padding-right:50px;\"/></div>");
             out.println("</div></br>");
             out.println("<div class=\"pad-block\">");
             out.println("<div class=\"input-label\"><label for=\"id_prenom\">Prénom:</label></div></br>");
@@ -147,7 +147,7 @@ public class RegisterServlet extends GenericServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String email = req.getParameter("email");
-        String nom = req.getParameter("name");
+        String nom = req.getParameter("nom");
         String prenom = req.getParameter("prenom");
         String classe = req.getParameter("classe");
         String mdp = req.getParameter("password");

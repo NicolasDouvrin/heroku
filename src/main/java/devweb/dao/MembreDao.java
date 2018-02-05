@@ -27,5 +27,5 @@ public interface MembreDao {
 
     public String getMdp(String email);
 
-    Membre deleteMembre();
+    public Membre deleteMembre(String email);
 }
