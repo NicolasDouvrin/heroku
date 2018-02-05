@@ -1,7 +1,9 @@
 package devweb.servlets;
 
+import devweb.services.ArticleService;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
+import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,6 +21,7 @@ public class AccueilServlet extends GenericServlet {
         resp.setCharacterEncoding("UTF-8");
 
         WebContext context = new WebContext(req, resp, req.getServletContext());
+        context.setVariable("articles", ArticleService.getInstance().listArticles());
 
         TemplateEngine templateEngine = createTemplateEngine(req.getServletContext());
         templateEngine.process("index", context, resp.getWriter());

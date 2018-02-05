@@ -70,16 +70,16 @@ public class LoginServlet extends GenericServlet {
             out.println("                </div>");
             out.println("    </div>");
 
-            out.println("<div class=\"w3-container w3-content w3-round-xlarge w3-display-middle w3-white w3-center w3-mobile\" style=\"padding:50px\">");
+            out.println("<div class=\"w3-container w3-content w3-round-xlarge w3-display-middle w3-white w3-center\" style=\"padding:50px\">");
             out.println("           <img class=\"w3-margin-top\" src=\"img/logo4.png\" width=\"300px\" ></img></br>");
             out.println("               <div class=\"login\">");
             out.println("                   <form method=\"post\">");
             out.println("                       <div class=\"pad-block\">");
-            out.println("                       <div class=\"input-label w3-left \" style=\"padding-left:45px; padding-bottom:16px;\"> Email:</div></br>");
-            out.println("                           <input id=\"id_email\" type=\"text\" name=\"email\" required maxlength=\"60\">");
+            out.println("                       <div class=\"input-label w3-left\" style=\"padding-left:45px;\"> Email:</div></br></br>");
+            out.println("                           <input class=\"w3-center\"id=\"id_email\" type=\"text\" name=\"email\" required maxlength=\"60\">");
             out.println("                       </div></br>");
             out.println("                       <div class=\"pad-block\">");
-            out.println("                       <div class=\"input-label w3-left\" style=\"padding-left:45px; padding-bottom:16px;\">Mot de Passe:</div></br>");
+            out.println("                       <div class=\"input-label w3-left\" style=\"padding-left:45px;\">Mot de Passe:</div></br></br>");
             out.println("                           <input type=\"password\" name=\"password\" required id=\"id_password\">");
             out.println("                       </div>");
             out.println("                       </br>");

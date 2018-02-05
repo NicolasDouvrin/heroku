@@ -64,14 +64,14 @@ public class RegisterServlet extends GenericServlet {
         out.println("                </div>");
         out.println("    </div>");
 
-        out.println("<div class=\"w3-container w3-content w3-round-xlarge w3-margin-top w3-display-middle w3-white w3-center w3-mobile\" style=\"padding-bottom:32px;padding-left:120px;padding-right:120px;\">");
+        out.println("<div class=\"w3-container w3-content w3-round-xlarge w3-display-middle w3-white w3-center w3-display-middle\" style=\"margin-top:150px;padding-bottom:32px;padding-left:120px;padding-right:120px;\">");
         out.println("   <div class=\"w3-margin-top\">");
         out.println("       <img src=\"img/logo3.png\" width=\"300px\" ></img>");
         out.println("               <div class=\"login\">");
         out.println("                   <form method=\"post\">");
         out.println("<div class=\"pad-block\">");
-        out.println("<div class=\"input-label\"><label for=\"id_username\">Email:</label></div></br>");
-        out.println("<div><input required id=\"id_email\" maxlength=\"30\" name=\"email\" type=\"text\" " +
+        out.println("<div class=\"input-label\"><label for=\"id_email\">Email:</label></div></br>");
+        out.println("<div><input required id=\"id_username\" maxlength=\"30\" name=\"username\" type=\"text\" " +
                 "pattern=\"[A-Za-z0-9._%+-]{3,}@hei.yncrea.fr\" style=\"padding-left:50px;padding-right:50px;\"/></div></br>");
         out.println("</div>");
         out.println("<div class=\"pad-block\">");
