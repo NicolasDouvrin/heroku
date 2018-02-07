@@ -4,6 +4,7 @@ package devweb.servlets;
 
 import devweb.managers.MembreLibrary;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -107,7 +108,7 @@ public class LoginServlet extends GenericServlet {
             out.println("                   <form method=\"post\">");
             out.println("                       <div class=\"pad-block\">");
             out.println("                       <div class=\"input-label w3-left\" style=\"padding-left:45px;\"> Email:</div></br></br>");
-            out.println("                           <input class=\"w3-center\"id=\"id_email\" type=\"text\" name=\"email\" required maxlength=\"60\">");
+            out.println("                           <input id=\"id_email\" type=\"text\" name=\"email\" required maxlength=\"60\">");
             out.println("                       </div></br>");
             out.println("                       <div class=\"pad-block\">");
             out.println("                       <div class=\"input-label w3-left\" style=\"padding-left:45px;\">Mot de Passe:</div></br></br>");
@@ -147,8 +148,9 @@ public class LoginServlet extends GenericServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String email=req.getParameter("email");
+
         String password1= MembreLibrary.getInstance().getMdp(email);
-        String password2=req.getParameter("password");
+        String password2= req.getParameter("password");
 
         if (password1==null){
             password1="";
@@ -156,7 +158,7 @@ public class LoginServlet extends GenericServlet {
 
         if (password1.equals(password2)) {
             req.getSession().setAttribute("utilisateurConnecte",email);
-            resp.sendRedirect("accueil");
+            resp.sendRedirect("accueil2");
         } else{
             resp.sendRedirect("login");
         }

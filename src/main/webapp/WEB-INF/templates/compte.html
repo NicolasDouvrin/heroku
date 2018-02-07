@@ -24,9 +24,13 @@
     <input id="id_password2" type="text" name="password2"></br>
     <btn class="w3-btn w3-round-large w3-black w3-center" style="margin-bottom: 20px;margin-top: 30px">Valider</btn>
     </br>
-    <btn class="w3-btn w3-round-large w3-amber w3-center" style="margin-bottom: 20px;margin-top: 60px">Inscription au prochain tournoi</btn>
+    <form method="post">
+        <btn class="w3-btn w3-round-large w3-amber w3-center" type="submit" style="margin-bottom: 20px;margin-top: 60px">Inscription au prochain tournoi</btn>
+    </form>
     </br>
-    <input type="submit" href="delcompte" value="Supprimer compte" class="btn btn-primary" />
+    <form method="post" action="delcompte">
+        <btn class="w3-btn w3-round w3-red w3-center" type="submit" style="margin-bottom: 20px;">Supprimer mon compte</btn>
+    </form>
 
 </div>
 

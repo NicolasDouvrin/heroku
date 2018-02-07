@@ -208,6 +208,36 @@
     </div>
 </div>
 
+<div th:fragment="navbar3">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-show w3-card w3-animate-top w3-white" id="myNavbar3">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="accueil2#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="accueil2#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="accueil2#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> INFOS</a>
+            <a href="classement" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"></i> CLASSEMENT</a>
+            <a href="tournois" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star"></i> TOURNOIS</a>
+            <a href="accueil#2contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="deconnexion" class="w3-bar-item w3-button w3-right w3-hide-small">DECONNEXION</a>
+            <a href="compte" class="w3-bar-item w3-button w3-right w3-hide-small">MON COMPTE</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo3" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="accueil2#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="accueil2#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">INFOS</a>
+            <a href="classement" class="w3-bar-item w3-button" onclick="toggleFunction()">CLASSEMENT</a>
+            <a href="tournois" class="w3-bar-item w3-button" onclick="toggleFunction()">TOURNOIS</a>
+            <a href="accueil2#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="compte" class="w3-bar-item w3-button" onclick="toggleFunction()">COMPTE</a>
+            <a href="deconnexion" class="w3-bar-item w3-button" onclick="toggleFunction()">DECONNEXION</a>
+        </div>
+    </div>
+</div>
+
 <div th:fragment="script">
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button

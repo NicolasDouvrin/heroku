@@ -2,7 +2,6 @@ package devweb.servlets;
 
 import devweb.entities.Membre;
 import devweb.managers.MembreLibrary;
-import devweb.services.ArticleService;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 

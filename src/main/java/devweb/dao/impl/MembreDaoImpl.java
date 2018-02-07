@@ -86,8 +86,8 @@ public class MembreDaoImpl implements MembreDao {
         return null;
     }
 
-        @Override
-    public Membre deleteMembre(String email) {
+    @Override
+    public void deleteMembre(String email) {
         String query = "DELETE FROM membre WHERE email=?";
         try {
             Connection connection = DataSourceProvider.getDataSource().getConnection();
@@ -97,7 +97,7 @@ public class MembreDaoImpl implements MembreDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
     }
+
 
 }

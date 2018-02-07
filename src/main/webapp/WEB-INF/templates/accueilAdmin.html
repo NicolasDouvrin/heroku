@@ -16,17 +16,20 @@
 <div class="w3-content w3-container w3-center w3-white" style="margin-top: 100px;padding-bottom:50px;margin-bottom: 200px;">
 
     <h1 style="padding-top: 50px"> ADMINISTRATION DES ARTICLES</h1>
-    <form method="post" action="addarticle">
-    <h3> Ajout d'un article </h3>
-    <p>Titre :</p>
-    <input id="id_titre" type="text" name="titre" style="width:400px;"></br>
-    <p>Texte de l'article :</p>
-    <textarea cols="25" rows="7" id="id_texte" name="texte" style="width:400px;"></textarea>
-    <br/>
-    <p> Photos :</p>
-    <input id="id_photo" type="file" name="image"/></br>
-    </br><input type="submit" value="VALIDER" class="btn btn-primary" />
-    </br>
+    <form method="post" action="addarticle" >
+        <h3> Ajout d'un article </h3>
+
+        <p>Titre :</p>
+        <input id="id_titre" type="text" name="titre" style="width:400px;"></br>
+
+        <p>Texte de l'article :</p>
+        <textarea cols="25" rows="7" id="id_texte" name="texte" style="width:400px;"></textarea>
+        <br/>
+
+        <p> Photos :</p>
+        <input id="id_photo" type="file" name="file"/></br>
+        </br><input type="submit" value="VALIDER" class="btn btn-primary" />
+        </br>
     </form>
 
     <form method="post" action="delarticle">
@@ -35,6 +38,7 @@
         <select id="id_article" name="id_article" style="width:400px;" th:field="*{articles}"  > /**/
             <option value=""> -- </option>
             <option th:each="article : ${articles}"
+                    th:text="${article.idArticle}"
                     th:value="${article.idArticle}"
                     name="titre"> Liste des Articles  </option>
         </select></br>

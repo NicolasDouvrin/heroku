@@ -1,9 +1,7 @@
 package devweb.dao;
 
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import devweb.entities.Membre;
 
-import javax.sql.DataSource;
 import java.util.List;
 
 public interface MembreDao {
@@ -27,5 +25,5 @@ public interface MembreDao {
 
     public String getMdp(String email);
 
-    public Membre deleteMembre(String email);
+    public void deleteMembre(String email);
 }
