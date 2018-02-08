@@ -22,10 +22,12 @@ public class AddArticleServlet extends HttpServlet{
         Article article = new Article(null,titre, image, texte);
         try {
             ArticleService.getInstance().addArticle(article);
+            resp.sendRedirect("accueil2#portfolio");
         } catch (IllegalArgumentException e) {
             req.getSession().setAttribute("addArticleErrorMessage", e.getMessage());
+            resp.sendRedirect("error");
         }
-        resp.sendRedirect("accueil#portfolio");
+
     }
 }
 

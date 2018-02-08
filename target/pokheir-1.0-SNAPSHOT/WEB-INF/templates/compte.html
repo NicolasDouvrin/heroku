@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html  xmlns:th="http://www.thymeleaf.org">
 <title>Mon Compte</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div th:replace="~{fragment::css}"></div>
 
 <div th:replace="~{fragment::style2}"></div>
 
@@ -13,25 +9,40 @@
 
 <div th:replace="~{fragment::navbar2}"></div>
 
-<div class="w3-content w3-container w3-white w3-center" id="class">
-
-    <h1> MON COMPTE</h1>
-
+<div class="w3-content w3-container w3-white w3-center w3-display-middle w3-mobile w3-hide-large w3-hide-medium" style="margin-top:50px;padding-top: 100px;padding-bottom: 100px;">
+    <h1 class="w3-indigo"> MON COMPTE</h1></br>
     <h3> Changer de mot de passe:</h3>
     <p>Nouveau mot de passe :</p>
-    <input id="id_password1" type="text" name="password1"></br>
+    <input class="w3-border w3-input" id="id_password1" type="text" name="password1"></br>
     <p> Confirmation du mot de passe :</p>
-    <input id="id_password2" type="text" name="password2"></br>
-    <btn class="w3-btn w3-round-large w3-black w3-center" style="margin-bottom: 20px;margin-top: 30px">Valider</btn>
+    <input class="w3-border w3-input" id="id_password2" type="text" name="password2"></br>
+    <btn class="w3-btn w3-round-large w3-black w3-center" style="margin-bottom: 20px;margin-top: 30px">Valider</btn></br>
     </br>
     <form method="post">
-        <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Inscription au prochain tournoi" style="margin-bottom: 20px;width: 234px;"></br>
+        <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" style="margin-bottom: 20px;width: 234px;"></br>
     </form>
     </br>
     <form method="post" action="/delcompte">
         <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Supprimer mon compte" style="margin-bottom: 20px;width: 234px;"></br>
     </form>
+</div>
 
+<div class="w3-content w3-container w3-white w3-center w3-display-middle w3-hide-small" style="padding-right: 200px;padding-left: 200px;padding-top: 50px;padding-bottom: 30px;">
+    <h1 class="w3-indigo"> MON COMPTE</h1></br>
+    <h3> Changer de mot de passe:</h3>
+    <p>Nouveau mot de passe :</p>
+    <input class="w3-border w3-input" id="id_password1" type="text" name="password1"></br>
+    <p> Confirmation du mot de passe :</p>
+    <input class="w3-border w3-input" id="id_password2" type="text" name="password2"></br>
+    <btn class="w3-btn w3-round-large w3-black w3-center" style="margin-bottom: 20px;margin-top: 30px">Valider</btn></br>
+    </br>
+    <form method="post">
+        <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" style="margin-bottom: 20px;width: 234px;"></br>
+    </form>
+    </br>
+    <form method="post" action="/delcompte">
+        <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Supprimer mon compte" style="margin-bottom: 20px;width: 234px;"></br>
+    </form>
 </div>
 
 <div th:replace="~{fragment::script}"></div>
