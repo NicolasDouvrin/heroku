@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- Titre de l'onglet -->
+<head>
+    <meta charset='UTF-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <link rel="stylesheet" href="css/w3style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+    <title>POK'HEIR - Login</title>
+</head>
+<!-- Formulaire de connexion avec pseudo et mot de passe -->
+<body>
+<style>
+
+    body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Lato", sans-serif;
+    }
+    body, html {
+        height: 100%;
+        line-height: 1.8;
+        background-color: black;\n
+            "  background-image: url(../img/login.jpg);");
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+        }
+    }
+</style>
+
+<div th:replace="~{fragment::navbar}"></div>
+
+<div class="w3-container w3-content w3-round-xlarge w3-display-middle w3-white w3-center w3-mobile" style="padding:50px">
+    <img class="w3-margin-top" src="img/logo4.png" width="300px" ></img></br>
+    <div class="login">
+        <form method="post">
+                <div class="w3-left" style="padding-left:45px;"> Email:</div></br></br>
+                <input class="w3-center w3-border w3-round-large" id="id_email" type="text" name="email" required maxlength="50" style="width:200px;">
+            </br>
+                <div class="w3-left" style="padding-left:45px;">Mot de Passe:</div></br></br>
+                <input class="w3-center w3-border w3-round-large" type="password" name="password" required id="id_password" style="width:200px;">
+            </br>
+                <input class="w3-btn w3-center w3-amber w3-border-black w3-round-xxlarge" type="submit" value="Se Connecter" />
+                </br><div>Tu veux nous rejoindre?  <a href="register">Inscrit toi !</a></div>
+        </form>
+    </div>"
+</div>
+
+<div th:replace="~{fragment::script}"></div>
+
+</body>
+</html>

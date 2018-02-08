@@ -11,13 +11,13 @@
 
 <body>
 
-<div th:replace="~{fragment::navbar}"></div>
+<div th:replace="~{fragment::navbar2}"></div>
 
 <div class="w3-content w3-container w3-center w3-white" style="margin-top: 100px;padding-bottom:50px;margin-bottom: 200px;">
 
-    <h1 style="padding-top: 50px"> ADMINISTRATION DES ARTICLES</h1>
+    <h1 class="w3-blue" style="padding-top: 50px"> ADMINISTRATION DES ARTICLES</h1></br>
     <form method="post" action="addarticle" >
-        <h3> Ajout d'un article </h3>
+        <h3 class="w3-amber"> Ajout d'un article </h3>
 
         <p>Titre :</p>
         <input id="id_titre" type="text" name="titre" style="width:400px;"></br>
@@ -28,23 +28,20 @@
 
         <p> Photos :</p>
         <input id="id_photo" type="file" name="file"/></br>
-        </br><input type="submit" value="VALIDER" class="btn btn-primary" />
+        </br><input class="w3-btn w3-round w3-green w3-center" type="submit" value="VALIDER" style="margin-bottom: 20px;width: 234px;"></br>
         </br>
-    </form>
+    </form></br>
 
     <form method="post" action="delarticle">
-    <h3> Suppression d'article </h3>
-    <div id="selection" >
-        <select id="id_article" name="id_article" style="width:400px;" th:field="*{articles}"  > /**/
-            <option value=""> -- </option>
-            <option th:each="article : ${articles}"
-                    th:text="${article.idArticle}"
-                    th:value="${article.idArticle}"
-                    name="titre"> Liste des Articles  </option>
+        <h3 class="w3-amber"> Suppression d'article </h3></br>
+        <select id="selection w3-select" name="id-Article">
+            <option> Selection de l'article à supprimer</option>
+            <option name="option" th:each="article : ${articleList}"
+                   th:text="${article.titre}"
+                   th:value="${article.idArticle}">
+            </option>
         </select></br>
-        </br>
-        <input type="submit" value="SUPPRIMER" class="btn btn-primary" />
-    </div>
+    </br><input class="w3-btn w3-round w3-red w3-center" type="submit" value="SUPPRIMER" style="margin-bottom: 20px;width: 234px;"></br>
 </form>
 </div>
 

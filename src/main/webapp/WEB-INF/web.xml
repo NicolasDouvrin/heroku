@@ -15,7 +15,6 @@
 
     <filter-mapping>
         <filter-name>AuthentificationFiltre</filter-name>
-        <url-pattern>/classement</url-pattern>
         <url-pattern>/compte</url-pattern>
         <url-pattern>/deconnexion</url-pattern>
         <url-pattern>/index2</url-pattern>
@@ -51,6 +50,7 @@
         <filter-name>FilterAdmin</filter-name>
         <url-pattern>/compteadmin</url-pattern>
         <url-pattern>/accueiladmin</url-pattern>
+
     </filter-mapping>
 
 

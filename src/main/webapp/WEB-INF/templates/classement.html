@@ -13,50 +13,91 @@
 
 <div th:replace="~{fragment::navbar3}"></div>
 
-<div class="w3-content w3-container w3-white w3-center" id="class">
+<div class="w3-content w3-container w3-white w3-center w3-mobile w3-hide-large w3-hide-medium" style="margin-top: 100px;" >
 
-  <h1>Classement des joueurs</h1>
+  <h1 class="w3-indigo w3-center" >Classement des joueurs</h1>
   <p>Voici les classements des membres de l'association lors des différents tournois:</p>
 
-  <table class="w3-content w3-table w3-table-hover w3-center">
+  <table class="w3-content w3-table w3-table-hover">
     <thead>
     <tr>
-      <th>Prénom</th>
-      <th>Nom</th>
-      <th>Points</th>
-      <th>Parties Gagnées</th>
-      <th>Parties Jouées</th>
+      <th class="w3-center">Prénom</th>
+      <th class="w3-center">Nom</th>
+      <th class="w3-center">Points</th>
+      <th class="w3-center">Parties Gagnées</th>
+      <th class="w3-center">Parties Jouées</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="membre : ${membresList}">
-      <td th:text="${membre.nom}">John</td>
-      <td th:text="${membre.prenom}">Doe</td>
-      <td th:text="${membre.nbPoints}">1500</td>
-      <td th:text="${membre.partiesGagnees}">15</td>
-      <td th:text="${membre.partiesJouees}">30</td>
+      <td class="w3-center" th:text="${membre.nom}">John</td>
+      <td class="w3-center" th:text="${membre.prenom}">Doe</td>
+      <td class="w3-center" th:text="${membre.nbPoints}">1500</td>
+      <td class="w3-center" th:text="${membre.partiesGagnees}">15</td>
+      <td class="w3-center" th:text="${membre.partiesJouees}">30</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="w3-content w3-container w3-white w3-center w3-mobile w3-hide-small" style="margin-top: 100px;padding:60px 200px 60px 200px;" >
+
+  <h1 class="w3-indigo w3-center" >Classement des joueurs</h1>
+  <p>Voici les classements des membres de l'association lors des différents tournois:</p>
+
+  <table class="w3-content w3-table w3-table-hover">
+    <thead>
+    <tr>
+      <th class="w3-center">Prénom</th>
+      <th class="w3-center">Nom</th>
+      <th class="w3-center">Points</th>
+      <th class="w3-center">Parties Gagnées</th>
+      <th class="w3-center">Parties Jouées</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="membre : ${membresList}">
+      <td class="w3-center" th:text="${membre.nom}">John</td>
+      <td class="w3-center" th:text="${membre.prenom}">Doe</td>
+      <td class="w3-center" th:text="${membre.nbPoints}">1500</td>
+      <td class="w3-center" th:text="${membre.partiesGagnees}">15</td>
+      <td class="w3-center" th:text="${membre.partiesJouees}">30</td>
     </tr>
     </tbody>
   </table>
 
 </div>
 
-<div class="w3-container w3-content w3-center w3-white " id="regle">
-<h1 class="w3-center"> Règles des tournois </h1>
+<div class="w3-container w3-content w3-center w3-white w3-hide-large w3-hide-medium" style="margin-top: 100px;margin-bottom: 100px;">
+<h1 class="w3-center w3-indigo"> Règles des tournois </h1>
 </br>
-<p> Voici les règles des tournois de l'association <p>
-<p>1. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>2. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>3. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>4. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>5. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>6. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>7. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>8. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>9. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>10. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p><b>Voici les règles des tournois de l'association :</b> <p>
+<p>Les règles de poker qui seront appliquées aux tournois seront celles du <a href="https://www.winamax.fr/texas-hold-em-no-limit">Texas Hold’em No Limit.</a></p>
+<p>Les joueurs pourront intégrer le tournoi lors des 90 premières minutes.</p>
+<p>Lors du début du tournoi, chaque joueur possèdera la même somme jetons, qui sera normalement fixée à 1 500.</p>
+<p>Pour aider les joueurs à situer leur classement, nous relèverons à chaque changement de table le classement par table des joueurs.</p>
+<p>Le premier se verra attribuer 10 pts.</p>
+<p>Le second 8 pts. Le troisième 6 pts. Le quatrième 4 pts. Le cinquième 2 pts. </p>
+<p>Les dix premières places seront gagnantes.</p>
+<p>Les lots seront affichés sur la page d'accueil du site</p>
+<p>Soyez fairplay, et surtout amusez-vous !</p>
+</div>
 
-
+<div class="w3-container w3-content w3-center w3-white w3-hide-small" style="margin-top: 100px;margin-bottom: 100px;padding:60px 200px 60px 200px;" >
+  <h1 class="w3-center w3-indigo"> Règles des tournois </h1>
+  </br>
+  <p> <b> Voici les règles des tournois de l'association : </b><p>
+  <div align="justify">
+  <p>Les règles de poker qui seront appliquées aux tournois seront celles du </br> <a href="https://www.winamax.fr/texas-hold-em-no-limit">Texas Hold’em No Limit.</a></p>
+  <p>Les joueurs pourront intégrer le tournoi lors des 90 premières minutes.</p>
+  <p>Lors du début du tournoi, chaque joueur possèdera la même somme jetons, qui sera normalement fixée à 1 500.</p>
+  <p>Pour aider les joueurs à situer leur classement, nous relèverons à chaque changement de table le classement par table des joueurs.</p>
+  <p>Le premier se verra attribuer 10 pts.</p>
+  <p>Le second 8 pts. Le troisième 6 pts. Le quatrième 4 pts. Le cinquième 2 pts. </p>
+  <p>Les dix premières places seront gagnantes.</p>
+  <p>Les lots seront affichés sur la page d'accueil du site</p>
+  <p>Soyez fairplay, et surtout amusez-vous !</p>
+</div>
 </div>
 
 <div th:replace="~{fragment::script}"></div>

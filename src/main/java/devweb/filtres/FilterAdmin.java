@@ -16,7 +16,6 @@ public class FilterAdmin implements Filter{
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         String identifiant = (String) httpRequest.getSession().getAttribute("utilisateurConnecte");
-        System.out.println(identifiant);
         HttpServletResponse httpResponse = (HttpServletResponse) response;
 
         if(!identifiant.equals("admin@hei.yncrea.fr")) {

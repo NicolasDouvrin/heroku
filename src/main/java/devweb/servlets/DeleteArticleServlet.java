@@ -16,7 +16,7 @@ import java.io.IOException;
 
         @Override
         protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-            Integer id = Integer.parseInt(req.getParameter("id_article"));
+            Integer id = Integer.parseInt(req.getParameter("id-Article"));
 
             try {
                 ArticleService.getInstance().delArticle(id);

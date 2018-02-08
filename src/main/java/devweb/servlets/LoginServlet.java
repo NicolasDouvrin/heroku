@@ -28,12 +28,11 @@ public class LoginServlet extends GenericServlet {
         String identifiantUtilisateurConnecte = (String) req.getSession().getAttribute("utilisateurConnecte");
         if(identifiantUtilisateurConnecte == null || "".equals(identifiantUtilisateurConnecte)) {
             out.println("<!DOCTYPE html>");
-            out.println("<html class=\"registration\">");
+            out.println("<html>");
             out.println("<!-- Titre de l'onglet -->");
             out.println("<head>");
             out.println("<meta charset='UTF-8'>");
             out.println("<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>");
-            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/login.css\">");
             out.println("<link rel=\"stylesheet\" href=\"css/w3style.css\">");
             out.println("<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato\">");
             out.println("<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">");
@@ -51,6 +50,8 @@ public class LoginServlet extends GenericServlet {
             out.println("        body, html {");
             out.println("            height: 100%;");
             out.println("            line-height: 1.8;");
+            out.println("            background-color: black;\n" +
+                    "  background-image: url(../img/login.jpg);");
             out.println("        }");
             out.println("");
             out.println("        /* Create a Parallax Effect */");
@@ -86,8 +87,8 @@ public class LoginServlet extends GenericServlet {
             out.println("            <a href=\"classement\" class=\"w3-bar-item w3-button w3-hide-small\"><i class=\"fa fa-line-chart\"></i> CLASSEMENT</a>");
             out.println("            <a href=\"tournois\" class=\"w3-bar-item w3-button w3-hide-small\"><i class=\"fa fa-star\"></i> TOURNOIS</a>");
             out.println("            <a href=\"accueil#contact\" class=\"w3-bar-item w3-button w3-hide-small\"><i class=\"fa fa-envelope\"></i> CONTACT</a>");
-            out.println("            <a href=\"login\" class=\"w3-bar-item w3-button w3-right w3-hide-small\">CONNEXION</a>");
             out.println("            <a href=\"register\" class=\"w3-bar-item w3-button w3-right w3-hide-small\">S'ENREGISTRER</a>");
+            out.println("            <a href=\"login\" class=\"w3-bar-item w3-button w3-right w3-hide-small\">CONNEXION</a>");
             out.println("                </div>");
             out.println("");
             out.println("        <!-- Navbar on small screens -->");
@@ -102,22 +103,22 @@ public class LoginServlet extends GenericServlet {
             out.println("                </div>");
             out.println("    </div>");
 
-            out.println("<div class=\"w3-container w3-content w3-round-xlarge w3-display-middle w3-white w3-center\" style=\"padding:50px\">");
+            out.println("<div class=\"w3-container w3-content w3-round-xlarge w3-display-middle w3-white w3-center w3-mobile\" style=\"padding:50px\">");
             out.println("           <img class=\"w3-margin-top\" src=\"img/logo4.png\" width=\"300px\" ></img></br>");
             out.println("               <div class=\"login\">");
             out.println("                   <form method=\"post\">");
-            out.println("                       <div class=\"pad-block\">");
-            out.println("                       <div class=\"input-label w3-left\" style=\"padding-left:45px;\"> Email:</div></br></br>");
-            out.println("                           <input id=\"id_email\" type=\"text\" name=\"email\" required maxlength=\"60\">");
+            out.println("                       <div class=\"block\">");
+            out.println("                       <div class=\"w3-left\" style=\"padding-left:45px;\"> Email:</div></br></br>");
+            out.println("                           <input class=\"w3-center w3-border w3-round-large\" id=\"id_email\" type=\"text\" name=\"email\" required maxlength=\"50\" style=\"width:200px;\">");
             out.println("                       </div></br>");
-            out.println("                       <div class=\"pad-block\">");
-            out.println("                       <div class=\"input-label w3-left\" style=\"padding-left:45px;\">Mot de Passe:</div></br></br>");
-            out.println("                           <input type=\"password\" name=\"password\" required id=\"id_password\">");
+            out.println("                       <div class=\"block\">");
+            out.println("                       <div class=\"w3-left\" style=\"padding-left:45px;\">Mot de Passe:</div></br></br>");
+            out.println("                           <input class=\"w3-center w3-border w3-round-large\" type=\"password\" name=\"password\" required id=\"id_password\" style=\"width:200px;\">");
             out.println("                       </div>");
             out.println("                       </br>");
-            out.println("                       <div class=\"pad-block\">");
+            out.println("                       <div class=\"block\">");
             out.println("                           <input class=\"w3-btn w3-center w3-amber w3-border-black w3-round-xxlarge\" type=\"submit\" value=\"Se Connecter\" /> </div>");
-            out.println("                       <div class=\"pad-block login-register-text\">");
+            out.println("                       <div class=\"block\">");
             out.println("                           </br><div>Tu veux nous rejoindre?  <a href=\"register\">Inscrit toi !</a></div>");
             out.println("                       </div>");
             out.println("                   </form>");
