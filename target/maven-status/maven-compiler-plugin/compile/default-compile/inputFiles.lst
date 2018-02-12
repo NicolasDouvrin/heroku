@@ -6,6 +6,7 @@ F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\filtres\Authent
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\dao\MembreDao.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\servlets\ClassementServlet.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\entities\Membre.java
+F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\servlets\ModifMdpServlet.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\managers\MembreLibrary.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\servlets\CompteAdminServlet.java
 F:\2ADouvrin\Documents\HEI 4_OLD\Git\heroku\src\main\java\devweb\entities\Article.java

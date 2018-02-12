@@ -42,5 +42,9 @@ public class MembreLibrary {
         membreDao.deleteMembre(email);
     }
 
+    public void modifMdp(String email,String mdp){
+        membreDao.modifMdp(email,mdp);
+    }
+
 
 }

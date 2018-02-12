@@ -99,5 +99,19 @@ public class MembreDaoImpl implements MembreDao {
         }
     }
 
+    @Override
+    public void modifMdp(String email, String mdp){
+        String query ="UPDATE membre SET mdp=? WHERE email=?";
+        try {
+            Connection connection = DataSourceProvider.getDataSource().getConnection();
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setString(1, mdp);
+            statement.setString(2, email);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

@@ -21,7 +21,7 @@ public class ArticleService {
 
     private ArticleDao articleDao = new ArticleDao();
 
-    public List<Article> listArticles() {
+   public List<Article> listArticles() {
         return articleDao.listArticles();
     }
 

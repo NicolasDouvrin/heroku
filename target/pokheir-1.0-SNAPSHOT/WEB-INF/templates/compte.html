@@ -9,15 +9,15 @@
 
 <div th:replace="~{fragment::navbar2}"></div>
 
-<div class="w3-content w3-container w3-white w3-center w3-display-middle w3-mobile w3-hide-large w3-hide-medium" style="margin-top:50px;padding-top: 100px;padding-bottom: 100px;">
+<div class="w3-content w3-container w3-white w3-center w3-display-middle w3-mobile w3-hide-large w3-hide-medium" style="margin-top:50px;padding-top: 150px;padding-bottom: 100px;">
     <h1 class="w3-indigo"> MON COMPTE</h1></br>
-    <h3> Changer de mot de passe:</h3>
-    <p>Nouveau mot de passe :</p>
-    <input class="w3-border w3-input" id="id_password1" type="text" name="password1"></br>
-    <p> Confirmation du mot de passe :</p>
-    <input class="w3-border w3-input" id="id_password2" type="text" name="password2"></br>
-    <btn class="w3-btn w3-round-large w3-black w3-center" style="margin-bottom: 20px;margin-top: 30px">Valider</btn></br>
-    </br>
+    <form action="modifmdp" method="post">
+        <h3> Changer de mot de passe:</h3></br>
+        <p>Nouveau mot de passe :</p>
+        <input class="w3-border w3-input" id="id_password1" type="text" name="password">
+        <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" style="margin-bottom: 20px;margin-top: 30px"></br>
+        </br>
+    </form>
     <form method="post">
         <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" style="margin-bottom: 20px;width: 234px;"></br>
     </form>
@@ -29,12 +29,12 @@
 
 <div class="w3-content w3-container w3-white w3-center w3-display-middle w3-hide-small" style="padding-right: 200px;padding-left: 200px;padding-top: 50px;padding-bottom: 30px;">
     <h1 class="w3-indigo"> MON COMPTE</h1></br>
-    <h3> Changer de mot de passe:</h3>
-    <p>Nouveau mot de passe :</p>
-    <input class="w3-border w3-input" id="id_password1" type="text" name="password1"></br>
-    <p> Confirmation du mot de passe :</p>
-    <input class="w3-border w3-input" id="id_password2" type="text" name="password2"></br>
-    <btn class="w3-btn w3-round-large w3-black w3-center" style="margin-bottom: 20px;margin-top: 30px">Valider</btn></br>
+    <form action="modifmdp" method="post">
+        <h3> Changer de mot de passe:</h3></br>
+        <p>Nouveau mot de passe :</p>
+        <input class="w3-border w3-input" id="id_password1" type="text" name="password"></br>
+        <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" style="margin-bottom: 20px;margin-top: 30px"></br>
+    </form>
     </br>
     <form method="post">
         <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" style="margin-bottom: 20px;width: 234px;"></br>
