@@ -35,6 +35,7 @@
   </div>
 </div>
 
+<!-- Données statistiques sur fond noir -->
 <div class="w3-row w3-center w3-black w3-padding-16">
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">1581</span><br>
@@ -63,7 +64,7 @@
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">LES INFOS</h3>
+  <h3 class="w3-center w3-blue" style="margin-left: 30%;margin-right: 30%">LES INFOS</h3>
   <p class="w3-center"><em>Ici vous trouverez toutes les informations que nous diffusons pour les différents évènements de l'année<br> Cliquez sur les images pour les agrandir.</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
@@ -71,7 +72,7 @@
     <div class="w3-col m3" th:each="article : ${articles}">
     	<h3 th:text="${article.titre}">Article 1</h3>
     	<p th:text="${article.texte}"> Voici l'article 1 concernant le premier tournoi de l'année. Il se déroulera le 23/12/2017 à partir de 14h en T101.</p>
-        <img th:ref="${article.image}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo">
+        <img th:src="${article.image}" style="width:100%;max-height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo">
     </div>
   </div>
 </div>
@@ -163,10 +164,7 @@ function onClick(element) {
 </script>
 <div th:replace="~{fragment::script}"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1JtGDzS8P0AxqVGOxezXl19sH2VREHUw&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+
 
 </body>
 </html>

@@ -23,7 +23,7 @@ import java.io.IOException;
             } catch (IllegalArgumentException e) {
                 req.getSession().setAttribute("delArticleErrorMessage", e.getMessage());
             }
-            resp.sendRedirect("accueil2#portfolio");
+            resp.sendRedirect("accueiladmin");
         }
 
 }

@@ -1,6 +1,5 @@
 package devweb.servlets;
 
-import com.mysql.jdbc.PreparedStatement;
 import devweb.entities.Article;
 import devweb.services.ArticleService;
 
@@ -10,19 +9,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Paths;
-import java.sql.Blob;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
 @WebServlet("/addarticle")
 @MultipartConfig
 public class AddArticleServlet extends HttpServlet{
-
 
 
     @Override
@@ -31,7 +22,7 @@ public class AddArticleServlet extends HttpServlet{
         String titre = req.getParameter("titre");
         String file = req.getParameter("image");
         String texte = req.getParameter("texte");
-
+        System.out.println(file);
 
         Article article = new Article(null,titre, file, texte);
         try {
@@ -40,8 +31,9 @@ public class AddArticleServlet extends HttpServlet{
         } catch (IllegalArgumentException e) {
             req.getSession().setAttribute("addArticleErrorMessage", e.getMessage());
             resp.sendRedirect("error");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
 
 
     }
