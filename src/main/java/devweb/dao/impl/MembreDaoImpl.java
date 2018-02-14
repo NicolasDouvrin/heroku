@@ -11,7 +11,7 @@ public class MembreDaoImpl implements MembreDao {
 
     @Override
     public List<Membre> listMembres(){
-        String query = "SELECT * FROM membre WHERE NOT nom='admin' ORDER BY nom;";
+        String query = "SELECT * FROM membre WHERE NOT email='admin@hei.yncrea.fr' ORDER BY nbPoints DESC;";
         List<Membre> listofMembres = new ArrayList<>();
         try (
                 Connection connection = DataSourceProvider.getDataSource().getConnection();
