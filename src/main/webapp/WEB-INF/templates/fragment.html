@@ -87,7 +87,7 @@
 
         /* First image (Logo. Full height) */
         .bgimg-1 {
-            background-image: url('img/poker2.jpg');
+            background-image: url('img/poker.gif');
             min-height: 100%;
         }
 
@@ -168,8 +168,8 @@
             <a href="classement" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"></i> CLASSEMENT</a>
             <a href="tournois" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star"></i> TOURNOIS</a>
             <a href="accueil#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="register" class="w3-bar-item w3-button w3-right w3-hide-small">S'ENREGISTRER</a>
-            <a href="login" class="w3-bar-item w3-button w3-right w3-hide-small">CONNEXION</a>
+            <a href="register" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fas fa-arrow-alt-circle-right"></i> S'ENREGISTRER</a>
+            <a href="login" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa fa-id-badge"></i> CONNEXION</a>
         </div>
 
         <!-- Navbar on small screens -->
@@ -185,36 +185,6 @@
     </div>
 </div>
 
-<div th:fragment="navbar2">
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-show w3-card w3-animate-top w3-white" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="accueil#home" class="w3-bar-item w3-button">HOME</a>
-            <a href="accueil#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="accueil#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> INFOS</a>
-            <a href="classement" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"></i> CLASSEMENT</a>
-            <a href="tournois" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star"></i> TOURNOIS</a>
-            <a href="accueil#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="deconnexion" class="w3-bar-item w3-button w3-right w3-hide-small">DECONNEXION</a>
-            <a href="compte" class="w3-bar-item w3-button w3-right w3-hide-small">MON COMPTE</a>
-        </div>
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="accueil#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="accueil#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">INFOS</a>
-            <a href="classement" class="w3-bar-item w3-button" onclick="toggleFunction()">CLASSEMENT</a>
-            <a href="tournois" class="w3-bar-item w3-button" onclick="toggleFunction()">TOURNOIS</a>
-            <a href="accueil#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            <a href="compte" class="w3-bar-item w3-button" onclick="toggleFunction()">COMPTE</a>
-            <a href="deconnexion" class="w3-bar-item w3-button" onclick="toggleFunction()">DECONNEXION</a>
-        </div>
-    </div>
-</div>
-
 <div th:fragment="navbar3">
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -225,19 +195,19 @@
             <a href="accueil2#home" class="w3-bar-item w3-button">HOME</a>
             <a href="accueil2#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
             <a href="accueil2#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> INFOS</a>
-            <a href="classement" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"></i> CLASSEMENT</a>
-            <a href="tournois" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star"></i> TOURNOIS</a>
+            <a href="classement2" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"></i> CLASSEMENT</a>
+            <a href="tournois2" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star"></i> TOURNOIS</a>
             <a href="accueil2#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="deconnexion" class="w3-bar-item w3-button w3-right w3-hide-small">DECONNEXION</a>
-            <a href="compte" class="w3-bar-item w3-button w3-right w3-hide-small">MON COMPTE</a>
+            <a href="deconnexion" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa fa-power-off"></i> DECONNEXION</a>
+            <a href="compte" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa fa-user"></i> MON COMPTE</a>
         </div>
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="accueil2#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
             <a href="accueil2#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">INFOS</a>
-            <a href="classement" class="w3-bar-item w3-button" onclick="toggleFunction()">CLASSEMENT</a>
-            <a href="tournois" class="w3-bar-item w3-button" onclick="toggleFunction()">TOURNOIS</a>
+            <a href="classement2" class="w3-bar-item w3-button" onclick="toggleFunction()">CLASSEMENT</a>
+            <a href="tournois2" class="w3-bar-item w3-button" onclick="toggleFunction()">TOURNOIS</a>
             <a href="accueil2#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
             <a href="compte" class="w3-bar-item w3-button" onclick="toggleFunction()">COMPTE</a>
             <a href="deconnexion" class="w3-bar-item w3-button" onclick="toggleFunction()">DECONNEXION</a>

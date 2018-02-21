@@ -1,3 +1,4 @@
+C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\servlets\Classement2Servlet.java
 C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\filtres\EncodingFilter.java
 C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\servlets\AddArticleServlet.java
 C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\filtres\AuthentificationFiltre.java
@@ -14,6 +15,7 @@ C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\dao\impl\MembreDao
 C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\servlets\DeleteMembreServlet.java
 C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\filtres\AuthentificationAdmin.java
 C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\dao\impl\DataSourceProvider.java
+C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\servlets\Tournoi2Servlet.java
 C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\dao\ArticleDao.java
 C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\servlets\ClassementServlet.java
 C:\Users\nicol\Dropbox\HEI 4\Git2\heroku\src\main\java\devweb\entities\Article.java

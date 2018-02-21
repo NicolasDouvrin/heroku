@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <!-- Titre de l'onglet -->
 <head>
     <title>POK'HEIR - Inscription</title>
     <div th:replace="~{fragment::css}"></div>
     <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="icon" type="image/ico" href="/img/pique.ico" />
+    <link rel="icon" type="image/ico" href="/img/pique.ico">
 </head>
-
 
 <!-- Formulaire d'enregistrement de l'utilisateur -->
 <style>
@@ -47,6 +44,8 @@
         }
     }
 </style>
+
+
 
 <body>
 <div th:replace="~{fragment::navbar}"></div>
@@ -85,7 +84,7 @@
 </div>
 
 <div class="w3-container w3-content w3-round-xlarge w3-display-middle w3-white w3-center w3-display-middle w3-hide-small"
-     style="margin-top:50px;margin-bottom:100px;padding-bottom:32px;padding-left:120px;padding-right:120px;">
+     style="margin-top:100px;margin-bottom:100px;padding-bottom:32px;padding-left:120px;padding-right:120px;">
 
     <div class="w3-margin-top">
         <img src="img/logo3.png" width="300px" ></img></br>
@@ -133,7 +132,7 @@
                 </div></br></br>
 
                 <div class="container-login100-form-btn p-t-10"></br>
-                    <input class="login100-form-btn" type="submit" value="VALIDER" /></br>
+                    <input class="w3-button w3-black w3-round-xxlarge" type="submit" value="VALIDER" style="margin-bottom:50px;padding-left: 110px;padding-right: 110px;"/></br>
                 </div>
             </form>
         </div>
