@@ -7,8 +7,8 @@ public class Membre {
         private String classe;
         private String mdp;
         private Integer nbPoints;
-        private Integer partiesGagnees;
         private Integer partiesJouees;
+        private Integer inscrit;
 
     public Integer getNbPoints() {
         return nbPoints;
@@ -16,14 +16,6 @@ public class Membre {
 
     public void setNbPoints(Integer nbPoints) {
         this.nbPoints = nbPoints;
-    }
-
-    public Integer getPartiesGagnees() {
-        return partiesGagnees;
-    }
-
-    public void setPartiesGagnees(Integer partiesGagnees) {
-        this.partiesGagnees = partiesGagnees;
     }
 
     public Integer getPartiesJouees() {
@@ -74,14 +66,22 @@ public class Membre {
         this.mdp = mdp;
     }
 
-    public Membre(String email, String nom, String prenom, String classe, String mdp, Integer nbPoints, Integer partiesGagnees, Integer partiesJouees) {
+    public Integer getInscrit() {
+        return inscrit;
+    }
+
+    public void setInscrit(Integer inscrit) {
+        this.inscrit = inscrit;
+    }
+
+    public Membre(String email, String nom, String prenom, String classe, String mdp, Integer nbPoints, Integer partiesJouees, Integer inscrit) {
         this.email = email;
         this.nom = nom;
         this.prenom = prenom;
         this.classe = classe;
         this.mdp = mdp;
         this.nbPoints = nbPoints;
-        this.partiesGagnees = partiesGagnees;
         this.partiesJouees = partiesJouees;
+        this.inscrit = inscrit;
     }
 }

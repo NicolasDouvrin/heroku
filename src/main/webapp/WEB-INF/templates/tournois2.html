@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<title>Tournois</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <link rel="icon" type="image/ico" href="/img/pique.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<div th:replace="~{fragment::style5}"></div>
+
+<body>
+
+<div th:replace="~{fragment::navbar3}"></div>
+
+<div name="tournoi" class="w3-center w3-green w3-content w3-container" style="margin-top: 80px;">
+    <h1> AFFICHAGE TOURNOI </h1>
+</div>
+
+<div class="w3-container" name="tabletournoi" style="margin-top:10%;margin-left: 5px;">
+    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas Nicolas Nicolas </h4>
+    <img src="/img/table.png" style="width: 300px;">
+    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas Nicolas Nicolas </h4>
+</div>
+
+<div name="minuteur" id="minuteur" class="w3-display-right w3-quarter w3-center w3-container w3-content w3-blue" style="margin-right: 80px;padding-bottom:80px;top:60%;">
+    <h1 class="w3-border" style="margin-bottom: 35px"> TIMER </h1></br>
+    <h1 id="time-display" class="timer-display w3-black" style="font-size:90px;font-family: 'Arial Black', Gadget, sans-serif;">10:00</h1></br>
+</div>
+
+<script id="script2"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script src="/js/minuteur.js" type="text/javascript">
+    var e=request.getParameter("tournoiadmin #minutes")
+</script>
+
+
+<div th:replace="~{fragment::script}"></div>
+</body>
+
+</html>

@@ -18,8 +18,12 @@
         <url-pattern>/compte</url-pattern>
         <url-pattern>/deconnexion</url-pattern>
         <url-pattern>/index2</url-pattern>
+        <url-pattern>/classement2</url-pattern>
+        <url-pattern>/tournois2</url-pattern>
         <url-pattern>/compteadmin</url-pattern>
         <url-pattern>/accueiladmin</url-pattern>
+        <url-pattern>/tournoiadmin</url-pattern>
+        <url-pattern>/admin/*</url-pattern>
     </filter-mapping>
     
     <filter>
@@ -50,8 +54,8 @@
         <filter-name>FilterAdmin</filter-name>
         <url-pattern>/compteadmin</url-pattern>
         <url-pattern>/accueiladmin</url-pattern>
-
+        <url-pattern>/tournoiadmin</url-pattern>
+        <url-pattern>/admin/*</url-pattern>
     </filter-mapping>
-
 
 </web-app>

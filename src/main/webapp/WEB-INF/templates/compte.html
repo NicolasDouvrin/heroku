@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html  xmlns:th="http://www.thymeleaf.org">
 <title>Mon Compte</title>
+<head><link rel="icon" type="image/ico" href="/img/pique.ico" /></head>
 <div th:replace="~{fragment::css}"></div>
 
 <div th:replace="~{fragment::style2}"></div>
 
 <body>
 
-<div th:replace="~{fragment::navbar2}"></div>
+<div th:replace="~{fragment::navbar3}"></div>
 
 <div class="w3-content w3-container w3-white w3-center w3-display-middle w3-mobile w3-hide-large w3-hide-medium" style="margin-top:50px;padding-top: 150px;padding-bottom: 100px;">
     <h1 class="w3-indigo"> MON COMPTE</h1></br>
@@ -18,7 +19,7 @@
         <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" style="margin-bottom: 20px;margin-top: 30px"></br>
         </br>
     </form>
-    <form method="post">
+    <form method="post" action="/jointournoi">
         <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" style="margin-bottom: 20px;width: 234px;"></br>
     </form>
     </br>
@@ -36,8 +37,11 @@
         <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" style="margin-bottom: 20px;margin-top: 30px"></br>
     </form>
     </br>
-    <form method="post">
+    <form method="post" action="/jointournoi">
         <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" style="margin-bottom: 20px;width: 234px;"></br>
+    </form>
+    <form method="post" action="/canceltournoi">
+        <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Annuler Inscription" style="margin-bottom: 20px;width: 234px;"></br>
     </form>
     </br>
     <form method="post" action="/delcompte">
