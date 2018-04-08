@@ -29,8 +29,5 @@ public class TournoiService {
         tournoiDao.initTournoi();
     }
 
-    public int nbinscrit(){ ;
 
-        return tournoiDao.nbinscrit();
-    }
 }

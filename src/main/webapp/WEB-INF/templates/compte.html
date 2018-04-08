@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html  xmlns:th="http://www.thymeleaf.org">
 <title>Mon Compte</title>
-<head><link rel="icon" type="image/ico" href="/img/pique.ico" /></head>
+<head>
+    <link rel="icon" type="image/ico" href="/img/pique.ico" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117171421-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117171421-1');
+    </script>
+</head>
 <div th:replace="~{fragment::css}"></div>
 
 <div th:replace="~{fragment::style2}"></div>

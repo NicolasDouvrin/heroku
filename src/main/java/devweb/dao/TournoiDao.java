@@ -35,30 +35,13 @@ public class TournoiDao {
     }
 
     public void initTournoi(){
-        String query = "UPDATE tournoi SET tournoi.nbInscrits=(select count(membre.email) from membre where membre.inscrit=1);";
+        String query = "UPDATE tournoi SET nbInscrits=(select count(*) from membre where membre.inscrit='1') WHERE idTournoi=(SELECT max(idTournoi) as maximum) ;";
         try (Connection connection = getDatasource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
-
-
-    public int nbinscrit(){
-        Integer nombre = 10;
-        try (Connection connection = getDatasource().getConnection();
-             Statement statement = connection.createStatement();
-             ResultSet resultSet = statement.executeQuery("Select nbInscrits From tournoi ORDER BY idTournoi DESC LIMIT 1")) {
-             resultSet.next();
-             nombre=resultSet.getInt(1);
-             resultSet.close();
-             statement.close();
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return nombre;
     }
 
 

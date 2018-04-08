@@ -77,7 +77,7 @@ public class MembreDaoImpl implements MembreDao {
 
     @Override
     public void addMembre(String email, String nom, String prenom, String classe, String mdp) {
-        String query = "INSERT INTO membre(email, nom, prenom, classe, mdp, nbPoints, partiesGagnees, partiesJouees, inscrit) VALUES(?,?,?,?,?,'0','0','0','0')";
+        String query = "INSERT INTO membre(email, nom, prenom, classe, mdp, nbPoints, partiesJouees, inscrit) VALUES(?,?,?,?,?,'0','0','0')";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, email);
@@ -186,5 +186,22 @@ public class MembreDaoImpl implements MembreDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+
+    public int nbinscrit(){
+        Integer nombre = 10;
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("Select count(inscrit) From membre WHERE inscrit='1'")) {
+            resultSet.next();
+            nombre=resultSet.getInt(1);
+            resultSet.close();
+            statement.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return nombre;
     }
 }

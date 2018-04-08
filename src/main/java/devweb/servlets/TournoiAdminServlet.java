@@ -26,7 +26,7 @@ public class TournoiAdminServlet extends GenericServlet {
         List<Membre> listOfMembresInscrit = MembreLibrary.getInstance().listMembresInscrit();
         context.setVariable("membresList",listOfMembresInscrit);
 
-        Integer nbInscrit = TournoiService.getInstance().nbinscrit();
+        Integer nbInscrit = MembreLibrary.getInstance().nbinscrit();
         context.setVariable("membresInscrit",nbInscrit);
 
         TemplateEngine templateEngine = createTemplateEngine(req.getServletContext());

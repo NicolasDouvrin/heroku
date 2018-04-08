@@ -70,5 +70,6 @@ public class MembreLibrary {
         membreDao.cancelJoin(email);
     }
 
+    public int nbinscrit(){ return membreDao.nbinscrit(); }
 
 }

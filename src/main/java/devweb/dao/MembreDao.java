@@ -27,4 +27,6 @@ public interface MembreDao {
     public void joinTournoi(String email);
 
     public void cancelJoin(String email);
+
+    public int nbinscrit();
 }
