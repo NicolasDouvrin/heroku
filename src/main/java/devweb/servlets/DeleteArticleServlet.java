@@ -1,6 +1,5 @@
 package devweb.servlets;
 
-
 import devweb.services.ArticleService;
 
 import javax.servlet.ServletException;
@@ -16,6 +15,7 @@ import java.io.IOException;
 
         @Override
         protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
             Integer id = Integer.parseInt(req.getParameter("id-Article"));
 
             try {

@@ -1,6 +1,7 @@
 package devweb.managers;
 
 import devweb.dao.MembreDao;
+import devweb.dao.TournoiDao;
 import devweb.dao.impl.MembreDaoImpl;
 import devweb.entities.Membre;
 
@@ -10,6 +11,10 @@ public class MembreLibrary {
 
     public List<Membre> listMembres() {
         return membreDao.listMembres();
+    }
+
+    public List<Membre> listMembresInscrit() {
+        return membreDao.listMembresInscrit();
     }
 
     private static class MembreLibraryHolder {
@@ -43,8 +48,28 @@ public class MembreLibrary {
     }
 
     public void modifMdp(String email,String mdp){
+
         membreDao.modifMdp(email,mdp);
     }
 
+    public void addPoint(String email, Integer nbpoint){
+
+        membreDao.addPoint(email,nbpoint);
+    };
+
+    public void deleteAllPoint(){
+
+        membreDao.deleteAllPoint();
+    };
+
+    public void joinTournoi(String email){
+        membreDao.joinTournoi(email);
+    }
+
+    public void cancelJoin(String email){
+        membreDao.cancelJoin(email);
+    }
+
+    public int nbinscrit(){ return membreDao.nbinscrit(); }
 
 }

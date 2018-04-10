@@ -21,5 +21,6 @@ public class Tournoi2Servlet extends GenericServlet {
 
         TemplateEngine templateEngine = createTemplateEngine(req.getServletContext());
         templateEngine.process("tournois2", context, resp.getWriter());
+
     }
 }

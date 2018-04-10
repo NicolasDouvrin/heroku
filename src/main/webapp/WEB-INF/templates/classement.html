@@ -6,7 +6,17 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<head><link rel="icon" type="image/ico" href="/img/pique.ico" /></head>
+<head>
+  <link rel="icon" type="image/ico" href="/img/pique.ico" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117171421-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117171421-1');
+  </script>
+</head>
 
 <div th:replace="~{fragment::style2}"></div>
 
@@ -14,7 +24,7 @@
 
 <div th:replace="~{fragment::navbar}"></div>
 
-<div class="w3-content w3-container w3-white w3-center w3-mobile w3-hide-large w3-hide-medium" style="padding-bottom:30px;padding-top:30px;margin-top: 100px;" >
+<div id="mobile" class="w3-content w3-container w3-white w3-center w3-mobile w3-hide-large w3-hide-medium" style="padding-bottom:30px;padding-top:30px;margin-top: 100px;" >
 
   <h1 class="w3-indigo w3-center" >Classement des joueurs</h1>
   <p>Voici les classements des membres de l'association lors des différents tournois:</p>
@@ -25,7 +35,6 @@
       <th class="w3-center">Prénom</th>
       <th class="w3-center">Nom</th>
       <th class="w3-center">Points</th>
-      <th class="w3-center">Parties Gagnées</th>
       <th class="w3-center">Parties Jouées</th>
     </tr>
     </thead>
@@ -34,14 +43,13 @@
       <td class="w3-center" th:text="${membre.nom}">John</td>
       <td class="w3-center" th:text="${membre.prenom}">Doe</td>
       <td class="w3-center" th:text="${membre.nbPoints}">1500</td>
-      <td class="w3-center" th:text="${membre.partiesGagnees}">15</td>
       <td class="w3-center" th:text="${membre.partiesJouees}">30</td>
     </tr>
     </tbody>
   </table>
 </div>
 
-<div class="w3-content w3-container w3-white w3-center w3-mobile w3-hide-small" style="margin-top: 100px;padding:60px 200px 60px 200px;" >
+<div id="WEB" class="w3-content w3-container w3-white w3-center w3-mobile w3-hide-small" style="margin-top: 100px;padding:60px 200px 60px 200px;" >
 
   <h1 class="w3-indigo w3-center" >Classement des joueurs</h1>
   <p>Voici les classements des membres de l'association lors des différents tournois:</p>
@@ -52,7 +60,6 @@
       <th class="w3-center">Prénom</th>
       <th class="w3-center">Nom</th>
       <th class="w3-center">Points</th>
-      <th class="w3-center">Parties Gagnées</th>
       <th class="w3-center">Parties Jouées</th>
     </tr>
     </thead>
@@ -61,7 +68,6 @@
       <td class="w3-center" th:text="${membre.nom}">John</td>
       <td class="w3-center" th:text="${membre.prenom}">Doe</td>
       <td class="w3-center" th:text="${membre.nbPoints}">1500</td>
-      <td class="w3-center" th:text="${membre.partiesGagnees}">15</td>
       <td class="w3-center" th:text="${membre.partiesJouees}">30</td>
     </tr>
     </tbody>

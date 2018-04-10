@@ -6,7 +6,17 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<head><link rel="icon" type="image/ico" href="/img/pique.ico" /></head>
+<head>
+    <link rel="icon" type="image/ico" href="/img/pique.ico" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117171421-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117171421-1');
+    </script>
+</head>
 
 <div th:replace="~{fragment::style2}"></div>
 
@@ -21,22 +31,42 @@
     </a>
     </br>
     <h3>Création et organisation de tournoi de poker</h3></br>
-    <form method="post" action="">
-        <btn class="w3-btn w3-round-large w3-amber w3-center" type="submit" style="margin-bottom: 20px">Gestion de tournoi</btn>
+    <a href="tournoiadmin"><btn class="w3-btn w3-round-large w3-amber w3-center" type="submit" style="margin-bottom: 20px"> Gestion de tournoi </btn>
+    </a>
+    <form method="post" action="deletemembre" style="margin-top: 15px">
+        <h3> Suppression de membre </h3>
+        <select id="selection w3-select" name="emailsupp" style="margin-top: 15px;">
+            <option> Selection du membre à supprimer</option>
+            <option name="option2" th:each="membre : ${membresList}"
+                    th:text="${membre.email}"
+                    th:value="${membre.email}">
+            </option>
+        </select></br>
+        </br><input class="w3-btn w3-round w3-red w3-center" type="submit" value="SUPPRIMER" style="margin-bottom: 20px;width: 160px;"></br>
     </form>
 </div>
 
-<div class="w3-content w3-container w3-white w3-center w3-display-middle w3-hide-small" style="padding: 60px 100px 60px 100px;">
+<div class="w3-content w3-container w3-white w3-center w3-display-middle w3-hide-small" style="margin-top:80px;margin-bottom:50px;padding: 60px 100px 60px 100px;">
     <h1 class="w3-red"> MON COMPTE ADMIN</h1></br>
     <h3>Modification des articles sur la page d'accueil</h3></br>
     <a href="accueiladmin"><btn class="w3-btn w3-round-large w3-amber w3-center" type="submit" style="margin-bottom: 20px"> Gestion de l'accueil </btn>
     </a>
-    </br>
     <h3>Création et organisation de tournoi de poker</h3></br>
-    <form method="post" action="">
-        <btn class="w3-btn w3-round-large w3-amber w3-center" type="submit" style="margin-bottom: 20px">Gestion de tournoi</btn>
+    <a href="tournoiadmin"><btn class="w3-btn w3-round-large w3-amber w3-center" type="submit" style="margin-bottom: 20px">Gestion de tournoi</btn>
+    </a>
+    <form method="post" action="deletemembre" style="margin-top: 15px">
+        <h3> Suppression de membre </h3>
+        <select id="selection w3-select" name="emailsupp" style="margin-top: 15px;">
+            <option> Selection du membre à supprimer</option>
+            <option name="option2" th:each="membre : ${membresList}"
+                    th:text="${membre.email}"
+                    th:value="${membre.email}">
+            </option>
+        </select></br>
+        </br><input class="w3-btn w3-round w3-red w3-center" type="submit" value="SUPPRIMER" style="margin-bottom: 20px;width: 160px;"></br>
     </form>
 </div>
+
 
 <div th:replace="~{fragment::script}"></div>
 

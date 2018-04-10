@@ -22,7 +22,6 @@ public class AddArticleServlet extends HttpServlet{
         String titre = req.getParameter("titre");
         String file = req.getParameter("image");
         String texte = req.getParameter("texte");
-        System.out.println(file);
 
         Article article = new Article(null,titre, file, texte);
         try {

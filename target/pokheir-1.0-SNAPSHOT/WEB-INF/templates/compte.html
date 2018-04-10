@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html  xmlns:th="http://www.thymeleaf.org">
 <title>Mon Compte</title>
-<head><link rel="icon" type="image/ico" href="/img/pique.ico" /></head>
+<head>
+    <link rel="icon" type="image/ico" href="/img/pique.ico" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117171421-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117171421-1');
+    </script>
+</head>
 <div th:replace="~{fragment::css}"></div>
 
 <div th:replace="~{fragment::style2}"></div>
@@ -19,8 +29,11 @@
         <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" style="margin-bottom: 20px;margin-top: 30px"></br>
         </br>
     </form>
-    <form method="post">
-        <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" style="margin-bottom: 20px;width: 234px;"></br>
+    <form method="post" action="/jointournoi">
+        <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" onclick="myFunction()" style="margin-bottom: 20px;width: 234px;"></br>
+    </form>
+    <form method="post" action="/canceltournoi">
+        <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Annuler Inscription" onclick="myFunction2()" style="margin-bottom: 20px;width: 234px;"></br>
     </form>
     </br>
     <form method="post" action="/delcompte">
@@ -37,8 +50,11 @@
         <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" style="margin-bottom: 20px;margin-top: 30px"></br>
     </form>
     </br>
-    <form method="post">
-        <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" style="margin-bottom: 20px;width: 234px;"></br>
+    <form method="post" action="/jointournoi">
+        <input class="w3-btn w3-round w3-amber w3-center" type="submit" value="Inscription au prochain tournoi" onclick="myFunction()" style="margin-bottom: 20px;width: 234px;"></br>
+    </form>
+    <form method="post" action="/canceltournoi">
+        <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Annuler Inscription" onclick="myFunction2()" style="margin-bottom: 20px;width: 234px;"></br>
     </form>
     </br>
     <form method="post" action="/delcompte">
@@ -47,6 +63,16 @@
 </div>
 
 <div th:replace="~{fragment::script}"></div>
+
+<script>
+    function myFunction() {
+        confirm("Confirmer l'inscription");
+    }
+
+    function myFunction2() {
+        confirm("Confirmer la suppression de votre inscription");
+    }
+</script>
 
 </body>
 </html>

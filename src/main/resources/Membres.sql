@@ -11,8 +11,8 @@ CREATE TABLE membre (
   classe VARCHAR(42) NOT NULL,
   mdp VARCHAR(42) NOT NULL,
   nbPoints INT NOT NULL,
-  partiesGagnees INT NOT NULL,
   partiesJouees INT NOT NULL,
+  inscrit BOOLEAN,
   PRIMARY KEY (email)
 )
 
