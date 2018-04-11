@@ -84,7 +84,7 @@
                     <div class="input-label"><label>Mot de Passe:</label></div></br>
                     <div><input class="w3-border w3-round-large" required id="id_password" name="password" type="password" style="width:100%;height:40px;padding-left: 5px;"/></div></br>
 
-                <input class="w3-btn w3-amber w3-round-xxlarge" type="submit" value="VALIDER" /></br>
+                <input class="w3-btn w3-amber w3-round-xxlarge" type="submit" value="VALIDER" onclick="myFunction()" /></br>
             </form>
         </div>
     </div>
@@ -140,7 +140,7 @@
                 </div></br></br>
 
                 <div class="container-login100-form-btn p-t-10"></br>
-                    <input class="w3-btn w3-black w3-round-xxlarge" type="submit" value="VALIDER" style="margin-bottom:50px;padding-left: 110px;padding-right: 110px;"/></br>
+                    <input class="w3-btn w3-black w3-round-xxlarge" type="submit" value="VALIDER" onclick="myFunction()" style="margin-bottom:50px;padding-left: 110px;padding-right: 110px;"/></br>
                 </div>
             </form>
         </div>
@@ -149,6 +149,12 @@
 </div>
 
 <div th:replace="~{fragment::script}"></div>
+
+<script>
+    function myFunction() {
+        confirm("Veuiller confirmer l'inscription");
+    }
+</script>
 
 </body>
 </html>

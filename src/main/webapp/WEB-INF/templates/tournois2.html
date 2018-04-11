@@ -26,37 +26,8 @@
 
 <div th:replace="~{fragment::navbar3}"></div>
 
-<div name="minuteur" id="minuteur" class="w3-center w3-content w3-container w3-center" style="margin-top: 50px;width:25%;height:10%;">
-    <h1 id="time-display" class="timer-display w3-black" style="font-size:90px;font-family: 'Arial Black', Gadget, sans-serif;">10:00</h1></br>
-</div>
 
-<div id="tables">
-<div class="w3-container w3-content w3-display-left" name="tabletournoi" style="margin-top:10%;margin-left: 5px;">
-    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas - Nicolas - Nicolas </h4>
-    <img src="/img/table.png" style="width: 300px;">
-    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas - Nicolas - Nicolas  </h4>
-</div>
-
-<div class="w3-container w3-content w3-display-middle" name="tabletournoi" style="margin-top:10%;margin-left: 5px;">
-    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas - Nicolas - Nicolas </h4>
-    <img src="/img/table.png" style="width: 300px;">
-    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas - Nicolas - Nicolas </h4>
-</div>
-<div class="w3-container w3-content w3-display-right" name="tabletournoi" style="margin-top:10%;margin-left: 5px;">
-    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas - Nicolas - Nicolas  </h4>
-    <img src="/img/table.png" style="width: 300px;">
-    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas - Nicolas - Nicolas  </h4>
-</div>
-</div>
-
-
-<script id="script2"></script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-
-<script src="/js/minuteur.js" type="text/javascript">
-    var e=request.getParameter("tournoiadmin #minutes")
-</script>
+<iframe src="http://fr.mypokertour.org/horloge.html" width="85%" height="85%" style="margin-top: 80px;margin-left: 7%"></iframe>
 
 
 <div th:replace="~{fragment::script}"></div>

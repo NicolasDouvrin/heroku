@@ -26,7 +26,7 @@
         <h3> Changer de mot de passe:</h3></br>
         <p>Nouveau mot de passe :</p>
         <input class="w3-border w3-input" id="id_password1" type="text" name="password">
-        <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" style="margin-bottom: 20px;margin-top: 30px"></br>
+        <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" onclick="myFunction4()" style="margin-bottom: 20px;margin-top: 30px"></br>
         </br>
     </form>
     <form method="post" action="/jointournoi">
@@ -37,7 +37,7 @@
     </form>
     </br>
     <form method="post" action="/delcompte">
-        <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Supprimer mon compte" style="margin-bottom: 20px;width: 234px;"></br>
+        <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Supprimer mon compte" onclick="myFunction3()" style="margin-bottom: 20px;width: 234px;"></br>
     </form>
 </div>
 
@@ -47,7 +47,7 @@
         <h3> Changer de mot de passe:</h3></br>
         <p>Nouveau mot de passe :</p>
         <input class="w3-border w3-input" id="id_password1" type="text" name="password"></br>
-        <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" style="margin-bottom: 20px;margin-top: 30px"></br>
+        <input class="w3-btn w3-round-large w3-black w3-center" type="submit" value="Valider" onclick="myFunction4()" style="margin-bottom: 20px;margin-top: 30px"></br>
     </form>
     </br>
     <form method="post" action="/jointournoi">
@@ -58,7 +58,7 @@
     </form>
     </br>
     <form method="post" action="/delcompte">
-        <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Supprimer mon compte" style="margin-bottom: 20px;width: 234px;"></br>
+        <input class="w3-btn w3-round w3-red w3-center" type="submit" value="Supprimer mon compte" onclick="myFunction3()" style="margin-bottom: 20px;width: 234px;"></br>
     </form>
 </div>
 
@@ -66,11 +66,17 @@
 
 <script>
     function myFunction() {
-        confirm("Confirmer l'inscription");
+        confirm("Veuiller confirmer l'inscription");
     }
 
     function myFunction2() {
-        confirm("Confirmer la suppression de votre inscription");
+        confirm("Veuillez confirmer l'annulation de l'inscription");
+    }
+    function myFunction3() {
+        confirm("Etes vous sûr de vouloir supprimer votre compte ?");
+    }
+    function myFunction4() {
+        confirm("Votre mot de passe va être modifié !");
     }
 </script>
 
